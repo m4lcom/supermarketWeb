@@ -1,95 +1,110 @@
-
 body {
-    background-color: lightgray;
-    
+  background-color: lightgray;
 }
+
 .box-header {
-    background-color: white;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-#imagen-logo{
-    width: 15%;
+
+#imagen-logo {
+  width: 15%;
 }
+
 #buscador {
-    margin-top: 3%;
+  margin-top: 3%;
 }
+
 #btn-login {
-    margin-top: 3% ;
-    margin-right: 6%;
+  margin-top: 3%;
+  margin-right: 6%;
 }
+
 .box-nav {
-    background-color: #47b8d6;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    height: 40px;
+  background-color: #47b8d6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 40px;
 }
+
 .caja-nav {
-    border: 1px solid #0000;
-    font-family: 'Poppins', sans-serif;
-    height: 38xp;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    margin: auto 20px auto;
+  border: 1px solid #0000;
+  font-family: "Poppins", sans-serif;
+  height: 38xp;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto 20px auto;
 }
+
 nav div a:hover {
-    background-color: white;
-    color: #47b8d6;
+  background-color: white;
+  color: #47b8d6;
 }
+
 .sin-subrayado {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
+
 #imagen-oferta-1 {
-    width: 100%;
+  width: 100%;
 }
+
 #imagen-oferta-2 {
-    width: 100%;
-    margin-top: 2%;
+  width: 100%;
+  margin-top: 2%;
 }
+
 .box-promo-banc {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 #box-bancos {
-    background-color: lightcoral;    
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 40px;
-    text-align: center;
-    margin: 30px;
+  background-color: lightcoral;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 30px;
 }
+
 .titulares {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffff;
-    font-weight:bold;
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
+  font-weight: bold;
 }
+
 .img-ban {
-    width: 200px;
-    border-radius: 15px;
-    margin: 20px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 20px;
 }
+
 #box-categorias {
-    background-color: grey;    
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 40px;
-    text-align: center;
-    margin: 30px;
+  background-color: grey;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 30px;
 }
 
 #box-cat-img {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .img-cat {
-    width: 400px;
-    border-radius: 15px;
-    margin: 20px;
+  width: 400px;
+  border-radius: 15px;
+  margin: 20px;
 }
+
 aside {
-    background-color: beige;
+  background-color: beige;
 }
