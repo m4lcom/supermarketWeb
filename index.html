@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Market</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/jpg" href="Img/Logotipo/logo2.jpg" />
+  </head>
+
+  <body>
+    <!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#" id="logo">
+            <img
+              src="img/Logotipo/logo2.jpg"
+              alt="Logo institucional"
+              width="99%"
+            />
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Carrito</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Que producto buscas?"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <div class="box-nav">
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Ofertas</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Almacen</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Bebidas</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Congelados</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Frescos</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Hogar</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Limpieza</a>
+        </div>
+        <div class="caja-nav">
+          <a class="sin-subrayado" href="">Perfumeria</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <main>
+        <div class="box-ofertas">
+          <img
+            id="imagen-oferta-1"
+            src="img/Banner/serenisima.jpg"
+            alt="Ofertas"
+          />
+          <img
+            id="imagen-oferta-2"
+            src="img/Banner/cervezas.jpg"
+            alt="Ofertas-2"
+          />
+        </div>
+      </main>
+      <div id="box-bancos">
+        <div>
+          <h2 class="titulares">Aprovecha nuestras promociones bancarias</h2>
+        </div>
+        <div class="box-promo-banc">
+          <img
+            class="img-ban"
+            src="img/Bancos/nacion_web_2.jpg"
+            alt="Promociones bancarias"
+          />
+          <img
+            class="img-ban"
+            src="img/Bancos/OIP (1).jpg"
+            alt="Promociones bancarias"
+          />
+          <img
+            class="img-ban"
+            src="img/Bancos/OIP.jpg"
+            alt="Promociones bancarias"
+          />
+        </div>
+      </div>
+      <div id="box-categorias">
+        <div>
+          <h2 class="titulares">Categorias Destacadas</h2>
+        </div>
+        <div id="box-cat-img">
+          <img class="img-cat" src="img/Categorias/bazar3.jpg" alt="Bazar" />
+          <img
+            class="img-cat"
+            src="img/Categorias/jugueteriaCat.jpg"
+            alt="Jugueteria"
+          />
+          <img class="img-cat" src="img/Categorias/blanco.jpg" alt="Blanco" />
+        </div>
+      </div>
+    </section>
+    <div>
+      <h3>Categorias</h3>
+      <ul>
+        <li>Frutas y Verduras</li>
+        <li>Nuestra Rotiseria</li>
+        <li>Panificacion Artesanal</li>
+        <li>Productos sin T.A.C.C.</li>
+        <li>Pescaderia</li>
+        <li>Limpieza</li>
+        <li>Perfumeria</li>
+      </ul>
+    </div>
+
+    <footer>
+      <div>
+        <h3>Contactanos</h3>
+        <ul>
+          <li>Atencion al Cliente: 0800-444-XXXX</li>
+          <li>
+            <a href="https://www.google.com"> ir a Instagram</a>
+          </li>
+          <li>
+            <a href="https://facebook.com"> ir a facebook</a>
+          </li>
+          <li>
+            <form action="https://formspree.io/f/mdorbeog" method="POST">
+              <label>
+                Nombre:
+                <input type="name" name="name" />
+              </label>
+              <label>
+                Email:
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Tu mensaje:
+                <textarea name="message" placeholder="Escriba su comentario aqui..."></textarea>
+              </label>
+              <button type="submit">Enviar</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Envios</h3>
+        <a href="https://cadetesya.com/tu_super_online">Envio a Domicilio</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
