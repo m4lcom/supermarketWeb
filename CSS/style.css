@@ -1,3 +1,4 @@
+/* estilos generales */
 * {
   box-sizing: border-box;
 }
@@ -19,8 +20,18 @@ p {
   font-size: 1.25em;
 }
 
+/* header */
 #logo {
   width: 10%;
+}
+
+.form1 {
+  margin-right: 60px;
+}
+
+/* barra de navegacion */
+.navbar {
+  background-color: white;
 }
 
 .box-nav {
@@ -28,25 +39,16 @@ p {
   background-color: #47b8d6;
   flex-flow: row;
   justify-content: center;
-  height: 40px;
+  height: 35px;
+  align-items: center;
+
 }
 
-.form1 {
-  margin-right: 60px;
-}
 
-.navbar {
-  background-color: white;
-}
-
-.caja-nav {
-  border: 1px solid #0000;
+.item-nav {
   font-family: "Poppins", sans-serif;
-  height: 38xp;
   font-size: 15px;
   font-weight: bold;
-  text-align: center;
-  margin: auto 20px auto;
 }
 
 nav a {
@@ -72,16 +74,14 @@ nav div a:hover {
   margin-top: 2%;
 }
 
-#box-bancos {
+.box-bancos {
   background-color: lightcoral;
-  border-radius: 10px;
+  border-radius: 30px;
   padding-top: 5px;
   padding-bottom: 40px;
-  text-align: center;
-  margin: auto;
-  max-width: 1400px;
-
   flex-direction: row;
+  text-align: center;
+  /* margin: auto; */
   margin: 40px 4% 0 4%;
 }
 
@@ -105,16 +105,14 @@ nav div a:hover {
   max-width: 200px;
 }
 
-#box-categorias {
+.box-categorias {
   background-color: grey;
-  border-radius: 10px;
+  border-radius: 30px;
   padding-top: 5px;
   padding-bottom: 40px;
-  text-align: center;
-  margin: 0 4% 0 4%;
-  max-width: 1400px;
-  margin-top: 40px;
   flex-direction: row;
+  text-align: center;
+  margin: 6% 4% 0 4%;
 }
 
 #box-cat-img {
@@ -129,9 +127,9 @@ nav div a:hover {
   url("Img/Categorias/bazar3.jpg"); */
   /* background-image: url("bazar3.jpg"); */
   /* background-repeat: no-repeat; */
-  border-radius: 15px;
-  width: 400px;
-  margin: 20px;
+  border-radius: 30px;
+  width: 300px;
+  margin: 20px auto 20px;
   padding: 10px;
 }
 
@@ -173,6 +171,14 @@ nav div a:hover {
   border: black solid 3px;
 }
 
+@media screen and (max-width: 1024px) {
+  #box-cat-img {
+    justify-content: column;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .box-nav {
