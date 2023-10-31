@@ -15,98 +15,231 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!-- css -->
   <link rel="stylesheet" href="CSS/style.css" />
-  <!-- google fonts -->
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200&display=swap"
     rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- header -->
-  <header class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand" href="#" id="logo">
-          <img src="img/Logotipo/logo2.jpg" alt="Logo institucional" width="99%" />
+  <header>
+    <div class="container">
+      <a class="logo" href="#" id="logo">
+        <img src="img/Logotipo/logo2.jpg" alt="Logo institucional" width="190" />
+      </a>
+      <form role="search">
+        <input type="search" placeholder="Que querés comprar hoy?" aria-label="Search" />
+        <button type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <div class="links">
+        <a href="#">
+          <i class="bi bi-heart"></i>
+          Favoritos
         </a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active navbar-link " href="#">Favoritos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" href="#">Ingresar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" href="#">Carrito</a>
-          </li>
-        </ul>
-        <form class="d-flex form1" role="search">
-          <input class="form-control me-2" type="search" placeholder="Que producto buscas?" aria-label="Search" />
-          <button class="btn btn-outline-info" type="submit">Buscar</button>
-        </form>
+        <a href="#">
+          <i class="bi bi-person"></i>
+          Ingresar
+        </a>
+        <a href="#">
+          <i class="bi bi-cart4"></i>
+          Carrito
+        </a>
       </div>
     </div>
+
+    <!-- barra de navegacion-->
+    <nav>
+      <div class="container">
+        <div>
+          <a class="sin-subrayado" href="">Ofertas</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Almacen</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Bebidas</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Congelados</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Electro</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Frescos</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Hogar</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Limpieza</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Perfumeria</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Textil</a>
+        </div>
+        <div>
+          <a class="sin-subrayado" href="">Aire libre</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- barra de navegacion-->
-  <nav>
-    <div class="box-nav">
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Ofertas</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Almacen</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Bebidas</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Congelados</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Frescos</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Hogar</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Limpieza</a>
-      </div>
-      <div class="item-nav">
-        <a class="sin-subrayado" href="">Perfumeria</a>
+  <!-- section hero -->
+  <section class="hero">
+    <div class="container">
+      <div id="carousel-hero-1" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-hero-1" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-hero-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-hero-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-hero-1" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="Img\Banner\halloweenBanner23.jpg" class="d-block w-100" alt="banner halloween">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="Img/Banner/serenisima.jpg" class="d-block w-100" alt="banner lacteos">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="Img/Banner/cervezas.jpg" class="d-block w-100" alt="banner cervezas">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="Img/Banner/mix201023.jpg" class="d-block w-100" alt="banner carnes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hero-1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-hero-1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-  </nav>
+  </section>
+  <section>
+    <div class="container">
+      <div id="carousel-hero-2" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-hero-2" data-bs-slide-to="5" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Img\Banner/80marcas191023.jpg" class="d-block w-100" alt="Banner 80off">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/Banner/70marcas191023.jpg" class="d-block w-100" alt="Banner 70off">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/Banner/50marcas191023.jpg" class="d-block w-100" alt="Banner 50off">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/Banner/40marcas191023.jpg" class="d-block w-100" alt="banner 40off">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/Banner/25marcas191023.jpg" class="d-block w-100" alt="banner 25off">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/Banner/3x2vinosEspChamp25.jpg" class="d-block w-100" alt="banner 3x2vinosEspChamp">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hero-2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-hero-2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
-  <!-- seccion principal-->
+  <!-- -- alert -- -->
   <section>
-    <div class="box-ofertas">
-      <img id="imagen-oferta-1" src="img/Banner/serenisima.jpg" alt="Ofertas" />
-      <img id="imagen-oferta-2" src="img/Banner/cervezas.jpg" alt="Ofertas-2" />
+    <div class="container-alert">
+      <p class="item-alert">
+        ¡ALERTA!<br />
+        ESTAFAS
+      </p>
+      <div class="separador">
+      </div>
+      <p class="item-alert">
+        ¡CUIDADO! NO TE DEJES ENGAÑAR CON FALSOS CONCURSOS Y PREMIOS. <br />
+        NUNCA TE PEDIREMOS INFORMACION BANCARIA NI CLAVES PERSONALES.
+      </p>
+    </div>
+  </section>
+
+  <!-- section bancos -->
+  <section>
+    <div class="container-banco">
+      <h2 class="titulares">Aprovecha nuestras promociones bancarias</h2>
+      <div class="box-banco">
+        <img class="img-banco" src="img/Bancos/nacion_web_2.jpg" alt="Promociones bancarias 1" />
+        <img class="img-banco" src="img/Bancos/OIP (1).jpg" alt="Promociones bancarias 2" />
+        <img class="img-banco" src="img/Bancos/OIP.jpg" alt="Promociones bancarias 3" />
+        <img class="img-banco" src="img/Bancos/nacion.jpg" alt="Promociones bancarias 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- section categorias -->
+  <section>
+    <div class="container-categorias">
+      <h2 class="titulares">Nuestros productos</h2>
+      <div class="box-categorias">
+        <div class="categoria-item-1">
+          <h2>
+            Pescaderia
+          </h2>
+        </div> 
+        <div class="box-categorias-2">
+          <div class="categoria-item-2-1">
+            <h2>
+              Bebidas con alcohol
+            </h2>
+            <img src="Img/Productos/bca.png" alt="Bebidas con alcohol">
+          </div>
+          <div class="categoria-item-2-2">
+            <h2>
+              Bebidas sin alcohol
+            </h2>
+            <img src="Img/Productos/bsa.png" alt="Bebidas sin alcohol">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section>
-    <div class="box-bancos">
-      <div>
-        <h2 class="titulares">Aprovecha nuestras promociones bancarias</h2>
-      </div>
-      <div class="box-promo-banc">
-        <img class="img-ban" src="img/Bancos/nacion_web_2.jpg" alt="Promociones bancarias" />
-        <img class="img-ban" src="img/Bancos/OIP (1).jpg" alt="Promociones bancarias" />
-        <img class="img-ban" src="img/Bancos/OIP.jpg" alt="Promociones bancarias" />
-      </div>
-    </div>
-  </section>
-  <section >
-    <div class="box-categorias">
+    <div class="box-categorias3">
       <div>
         <h2 class="titulares">Categorias Destacadas</h2>
       </div>
@@ -117,18 +250,10 @@
       </div>
     </div>
   </section>
-  <div>
-    <h3>Categorias</h3>
-    <ul>
-      <li>Frutas y Verduras</li>
-      <li>Nuestra Rotiseria</li>
-      <li>Panificacion Artesanal</li>
-      <li>Productos sin T.A.C.C.</li>
-      <li>Pescaderia</li>
-      <li>Limpieza</li>
-      <li>Perfumeria</li>
-    </ul>
-  </div>
+  <section>
+    <div>
+    </div>
+  </section>
 
   <!-- pie de pagina -->
   <footer class="footer-container">
@@ -172,3 +297,18 @@
 </body>
 
 </html>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+<!-- <div class="box-ofertas">
+  <img id="imagen-oferta-1" src="img/Banner/serenisima.jpg" alt="Ofertas" />
+  <img id="imagen-oferta-2" src="img/Banner/cervezas.jpg" alt="Ofertas-2" />
+</div> -->
+<!-- <h3>Categorias</h3>
+<ul>
+  <li>Frutas y Verduras</li>
+  <li>Nuestra Rotiseria</li>
+  <li>Panificacion Artesanal</li>
+  <li>Productos sin T.A.C.C.</li>
+  <li>Pescaderia</li>
+  <li>Limpieza</li>
+  <li>Perfumeria</li>
+</ul> -->
