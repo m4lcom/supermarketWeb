@@ -6,17 +6,17 @@
 body {
   margin: 0;
   align-items: center;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(235, 235, 235);
   font-family: "Poppins", sans-serif;
   /* font-family: 'Ubuntu', sans-serif; */
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 1.7em;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.3em;
 }
 
 p {
@@ -176,7 +176,7 @@ section img {
 .titulares {
   font-weight: bold;
   padding: 30px 0 10px 0;
-  color: #898989;
+  color: #777777;
 }
 
 .container-banco {
@@ -191,6 +191,7 @@ section img {
 .box-banco {
   display: flex;
   justify-content: space-evenly;
+  margin: auto;
 }
 
 .img-banco {
@@ -204,6 +205,10 @@ section img {
 .container-categorias {
   max-width: 1300px;
   margin: auto;
+}
+
+.container-categorias .titulares {
+  margin-bottom: 25px;
 }
 
 .box-categorias {
@@ -222,24 +227,37 @@ section img {
   justify-content: space-between;
   background-image: url(../Img/Productos/pesca2.jpg);
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 26px;
   height: 220px;
-  width: 550px;
+  width: 630px;
+}
+
+.categoria-item-1 h2 {
+  margin: 170px 0 0 20px;  
+  font-weight: bold;
+  color: #777777;
 }
 
 .categoria-item-2-1 {
   display: flex;
-  border-radius: 15px;
+  border-radius: 26px;
   height: 100px;
-  width: 550px;
+  width: 630px;
   justify-content: space-between;
+  background: #fceabb;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f8b500, #fceabb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f8b500, #fceabb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .categoria-item-2-2 {
   display: flex;
-  border-radius: 15px;
+  border-radius: 26px;
   height: 100px;
-  width: 550px;
+  width: 630px;
+  justify-content: space-between;
   background: #2980B9;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ade7fd, #ade7fda9, #2980B9);
@@ -247,8 +265,42 @@ section img {
   background: linear-gradient(to right, #ade7fd, #ade7fda9, #2980B9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.box-categorias-2 h2 {
+  margin: 50px 0 0 20px;
+  font-weight: bold;
+  color: #777777;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 ;
+}
+
+.categoria-item-3 {
+  display: flex;
+  border-radius: 26px;
+  background-color: #fff;
+  height: 100px;
+  width: 420px;
   justify-content: space-between;
 }
+
+.categoria-item-3 h2 {
+  margin: 35px 0 0 25px;
+  font-weight: bold;
+  color: #777777;
+}
+
+.categoria-item-3 img {
+  
+}
+
+
+
+
 
 
 .box-categorias3 {
