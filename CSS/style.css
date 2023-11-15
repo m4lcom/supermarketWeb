@@ -47,19 +47,6 @@ header .logo {
   margin: 0;
 }
 
-#menu {
-  display: none;
-}
-
-.menu-icono {
-  width: 35px;
-}
-
-header label {
-  cursor: pointer;
-  display: none;
-}
-
 header form {
   display: flex;
 }
@@ -601,5 +588,17 @@ footer button:hover {
   .box-footer-2 {
     flex-direction: column;
     align-items: center;
+  }
+
+  .container-alert {
+    display: none;
+  }
+
+  header .links {
+    display: none;
+  }
+  
+  .container-categorias {
+    display: none;    
   }
 }
